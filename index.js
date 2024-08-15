@@ -1,7 +1,7 @@
 const { Telegraf } = require('telegraf');
-const config = require('../config/config');
-const { scheduleBirthdayMessages } = require('../event/schedule');
-const { readJsonFile, readMessageFile } = require('../utils/fileUtils');
+const config = require('./bot/config/config');
+const { scheduleBirthdayMessages } = require('./bot/event/schedule');
+const { readJsonFile, readMessageFile } = require('./bot/utils/fileUtils');
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../secure/.env') });
 

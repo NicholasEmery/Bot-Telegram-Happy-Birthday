@@ -2,10 +2,9 @@
   "name": "bot-telegram-happy-birthday",
   "version": "1.0.0",
   "description": "It is an automation BOT that sends happy birthday messages in Telegram groups that can also generate custom images.",
-  "main": "/bot/src/index.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "node /bot/src/index.js",
-    "test": "nodemon ./tests/src/test.js"
+    "dev": "node index.js"
   },
   "repository": {
     "type": "git",
