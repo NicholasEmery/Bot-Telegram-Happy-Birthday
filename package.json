@@ -1,0 +1,37 @@
+{
+  "name": "birthday-bot",
+  "version": "1.0.0",
+  "description": "Bot de Telegram para enviar mensagens de aniversário",
+  "main": "bot.js",
+  "scripts": {
+    "dev": "node ./bot/src/bot.js",
+    "test": "nodemon ./tests/src/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/birthday-bot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "birthday"
+  ],
+  "author": "Seu Nome",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yourusername/birthday-bot/issues"
+  },
+  "homepage": "https://github.com/yourusername/birthday-bot#readme",
+  "dependencies": {
+    "@google-cloud/language": "^6.4.0",
+    "axios": "^1.7.2",
+    "canvas": "^2.11.2",
+    "cron": "^3.1.6",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.2",
+    "node-schedule": "^2.1.1",
+    "node-telegram-bot-api": "^0.63.0",
+    "nodemon": "^3.1.4",
+    "telegraf": "^4.16.3"
+  }
+}
