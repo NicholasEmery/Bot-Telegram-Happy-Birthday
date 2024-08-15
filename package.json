@@ -1,7 +1,7 @@
 {
-  "name": "birthday-bot",
+  "name": "bot-telegram-happy-birthday",
   "version": "1.0.0",
-  "description": "Bot de Telegram para enviar mensagens de aniversário",
+  "description": "It is an automation BOT that sends happy birthday messages in Telegram groups that can also generate custom images.",
   "main": ".bot/src/index.js",
   "scripts": {
     "dev": "node ./bot/src/index.js",
@@ -9,19 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/birthday-bot.git"
+    "url": "git+https://github.com/NicholasEmery/Bot-Telegram-Happy-Birthday"
   },
   "keywords": [
     "telegram",
     "bot",
-    "birthday"
+    "happybirthday"
   ],
-  "author": "Seu Nome",
-  "license": "ISC",
+  "author": "Nicholas Emery",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yourusername/birthday-bot/issues"
+    "url": "https://github.com/NicholasEmery/Bot-Telegram-Happy-Birthday/issues"
   },
-  "homepage": "https://github.com/yourusername/birthday-bot#readme",
+  "homepage": "https://github.com/NicholasEmery/Bot-Telegram-Happy-Birthday/blob/main/README.md",
   "dependencies": {
     "@google-cloud/language": "^6.4.0",
     "axios": "^1.7.2",
