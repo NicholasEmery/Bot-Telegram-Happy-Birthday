@@ -2,9 +2,9 @@
   "name": "birthday-bot",
   "version": "1.0.0",
   "description": "Bot de Telegram para enviar mensagens de aniversário",
-  "main": "bot.js",
+  "main": ".bot/src/index.js",
   "scripts": {
-    "dev": "node ./bot/src/bot.js",
+    "dev": "node ./bot/src/index.js",
     "test": "nodemon ./tests/src/test.js"
   },
   "repository": {

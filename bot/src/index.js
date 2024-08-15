@@ -7,13 +7,14 @@ require('dotenv').config({ path: path.resolve(__dirname, '../secure/.env') });
 
 const bot = new Telegraf(config.botToken);
 
-bot.launch().then(console.log('Bot está ligado')).catch(err => {
+bot.launch().then(() => console.log('Bot está ligado')).catch(err => {
   console.error('Erro ao iniciar o bot:', err);
 });
 
 const birthdayData1 = readJsonFile(config.grupoEquipe.jsonFile);
 const birthdayData2 = readJsonFile(config.grupoAlunos.jsonFile);
-const birthdayMessageTemplate = readMessageFile(config.messageTemplateFile);
+const birthdayMessageTemplateAlunos = readMessageFile(config.messageTemplateFileAlunos);
+const birthdayMessageTemplateEquipe = readMessageFile(config.messageTemplateFileEquipe);
 
-scheduleBirthdayMessages(bot, birthdayData1, config.grupoEquipe.id, birthdayMessageTemplate);
-scheduleBirthdayMessages(bot, birthdayData2, config.grupoAlunos.id, birthdayMessageTemplate);
+scheduleBirthdayMessages(bot, birthdayData1, config.grupoEquipe, birthdayMessageTemplateEquipe);
+scheduleBirthdayMessages(bot, birthdayData2, config.grupoAlunos, birthdayMessageTemplateAlunos);
